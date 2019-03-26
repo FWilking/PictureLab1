@@ -26,6 +26,13 @@ public class PictureTester
     caterpillar.explore();
   }
 
+  public static void testMirrorDiagonal()
+  {
+    Picture caterpillar = new Picture("caterpillar.jpg");
+    caterpillar.mirrorDiagonal();
+    caterpillar.explore();
+  }
+
   /** Method to test mirrorVertical */
   public static void testFixUnderwater()
   {
@@ -33,6 +40,14 @@ public class PictureTester
     water.explore();
     water.fixUnderwater();
     water.explore();
+  }
+
+  public static void testCopy()
+  {
+    Picture b = new Picture("beach.jpg");
+    Picture c = new Picture("caterpillar.jpg");
+    b.copy(c, 10, 10, 100, 100);
+    b.explore();
   }
 
   /** Method to test mirrorTemple */
@@ -45,12 +60,12 @@ public class PictureTester
   }
   
   /** Method to test the collage method */
-  public static void testCollage()
-  {
-    Picture canvas = new Picture("640x480.jpg");
-    canvas.createCollage();
-    canvas.explore();
-  }
+//  public static void testCollage()
+//  {
+//    Picture canvas = new Picture("640x480.jpg");
+//    canvas.createCollage();
+//    canvas.explore();
+//  }
   
   /** Method to test edgeDetection */
   public static void testEdgeDetection()
@@ -67,20 +82,20 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    testZeroBlue();
+//    testZeroBlue();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
     //testNegate();
     //testGrayscale();
-    testFixUnderwater();
+//    testFixUnderwater();
     //testMirrorVertical();
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
-    //testMirrorDiagonal();
+//    testMirrorDiagonal();
     //testCollage();
-    //testCopy();
+    testCopy();
     //testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();

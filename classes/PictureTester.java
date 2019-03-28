@@ -45,7 +45,7 @@ public class PictureTester
   public static void testCopy()
   {
     Picture b = new Picture("beach.jpg");
-    Picture c = new Picture("caterpillar.jpg");
+    Picture c = new Picture("water.jpg");
     b.copy(c, 10, 10, 100, 100);
     b.explore();
   }

@@ -235,7 +235,7 @@ public class Picture extends SimplePicture
       for(int j = x; j < width + x; j++){
         System.out.println(toPixels[i][j].getBlue());
         System.out.println(fromPixels[i][j].getBlue());
-        toPixels[i][j] = fromPixels[i][j];
+        toPixels[i][j].setColor(fromPixels[i][j].getColor());
       }
     }
   }
